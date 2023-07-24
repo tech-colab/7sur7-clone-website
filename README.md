@@ -6,9 +6,9 @@ This is my version of a news website inspired by the famous news website 7sur7. 
 
 ## Features
 
-- Utilizes semantic HTML tags like `article`, `aside`, etc. for better accessibility and SEO.
+- Utilizes semantic HTML tags like `<article>`, `<aside>`,`<nav>`,`<footer>`,`<header>`,`<main>`,`<section>`, etc... for better accessibility and SEO.
 - Responsive design using CSS Grid and Flexbox properties for optimal viewing on various devices.
-
+ 
 ## Templates
 
 ### Home
