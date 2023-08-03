@@ -455,7 +455,100 @@ margin-left: 107px;
   width: 64px;
 }
 
+/* form */
+.container-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding:70px 9%; 
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+  background-color: #fff;
+  padding: 25px 20px;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 20px;
+  position: relative;
+}
 
+.title {
+  font-size: 28px;
+  color: #D10A10;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+}
+
+
+.message, .signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+  
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+  font-weight: lighter;
+}
+
+.form label .input:focus + span,.form label .input + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight:500;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background-color: #D10A10;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+}
+
+.submit:hover {
+  
+  background-color: #a70409;
+}
 
 /* responsive index */
 
