@@ -76,8 +76,9 @@ body{
   margin-right: auto;
   margin-left: auto;
   padding-left: 10px;
+  align-items: center;
 }
-.navbar .nav-container .navbar2 ul {
+.navbar .nav-container .navbar2>ul {
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -86,12 +87,12 @@ body{
   padding-left: 15px;
 margin-left: 107px;
 }
-.navbar .nav-container .navbar2 ul li{
+.navbar .nav-container .navbar2>ul li{
   display: flex;
   height: 100%;
   align-items: center;
 }
-.navbar .nav-container .navbar2 ul li a {
+.navbar .nav-container .navbar2>ul li a {
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   color: white;
@@ -204,14 +205,154 @@ margin-left: 107px;
 .brand-logo {
   position: absolute;
   top: -25px;
-  z-index: 891;
   height: 100px;
   border: 1px solid white;
   box-sizing: border-box;
 }
-.navbar .nav-container .navbar2 ul li a:hover{
+.navbar .nav-container .navbar2>ul li a:hover{
   background-color: rgba(0, 0, 0, 0.25);
   color: #fff;
+}
+#checkbtn{
+  display: none;
+}
+
+.hamburger{
+  display: block;
+  padding-left: 0;
+  cursor: pointer;
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+  stroke: white;
+}
+
+.sidebar{
+  height: 100%;
+}
+
+
+.sidebar ul{
+  display: block;
+  position: fixed;
+  top: 85px;
+  right: -100%;
+  bottom: 0;
+  height: calc(100% - 85px);  
+  width: 290px;
+  background-color: white;
+  padding: 0 25px 0 25px;
+  transition: all .6s ease-in-out;
+  z-index: 11;
+}
+.search_side{
+  position: relative;
+  margin-bottom: 40px;
+}
+.search_side{
+  width: 240px;
+  height: 40px;
+}
+.search_side input{
+  width: inherit;
+  height: inherit;
+  outline: none;
+  font-size: 14px;
+  border:1px solid rgb(212, 210, 210); 
+  padding-left: 7px;
+}
+.search_side svg{
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  font-size: 14px;
+  color: rgb(136, 136, 136);
+  font-weight: 400;
+}
+
+.sub_sidebar a{
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgb(85, 85, 85);
+  line-height: 20px;
+}
+.user_sidebar {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  column-gap: 5px;
+  justify-content: flex-end;
+}
+.quitter{
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+  stroke: white;
+}
+.sidebar ul ol{
+  margin:20px 0;
+  width: 88%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social_sidebar{
+  display: flex;
+  column-gap: 25px;
+  justify-content: center;
+  margin-top: 40px;
+}
+.social_sidebar iconify-icon{
+  color: rgb(85, 85, 85);
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+}
+.social_sidebar .tiktok:hover{
+  color:rgb(0, 0, 0);
+}
+.social_sidebar .instagram:hover{
+  color:rgb(236, 105, 127);
+}
+.social_sidebar .facebook:hover{
+  color:rgb(59, 89, 152);
+}
+.social_sidebar .twitter:hover{
+  color:rgb(0, 172, 237);
+}
+.social_sidebar .youtube:hover{
+  color:rgb(196, 48, 43);
+}
+/*
+.sidebar ul li a{
+  color: black;
+  display: flex;
+  align-items: center;
+}
+.sidebar ul li a iconify-icon{
+  font-size:15px;
+  margin-right: 8px;
+}
+.search_side svg{
+  position: absolute;
+  right: 20%;
+}*/
+#checkbtn:checked~.sidebar ul{
+  right:0;
+  transition: all .8s ease-in-out;
+  position: fixed;
+}
+
+#checkbtn:checked~ label .quitter{
+  display: block;
+}
+#checkbtn:checked~ label .hamburger{
+  display: none;
 }
 .section {
   background-color: yellow;
