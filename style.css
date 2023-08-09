@@ -572,7 +572,7 @@ button:hover{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding:120px 9%; 
+  padding-top:120px;
 }
 .form {
   display: flex;
@@ -1239,7 +1239,6 @@ ul{
     display: flex;
   }
 }
-<<<<<<< HEAD
 
 /* article */
 .main_article{  
@@ -1270,5 +1269,3 @@ ul{
   font-size: 18px;
   line-height: 25px;
 }
-=======
->>>>>>> ae2fd45 (home done)
