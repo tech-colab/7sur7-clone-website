@@ -572,7 +572,7 @@ button:hover{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding:70px 9%; 
+  padding:120px 9%; 
 }
 .form {
   display: flex;
@@ -1021,4 +1021,34 @@ button:hover{
     width: 100%;
     display: flex;
   }
+}
+
+/* article */
+.main_article{  
+  display :flex;
+  flex-direction: column;
+  line-height: 1.2;
+  gap: 20px;
+  
+}
+.main_article img{
+  width : 100%;
+
+}
+
+.main_article .sub-title {
+  font-size :18px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 25px;
+}
+
+.main_article .h3 {
+  font-size :18px;
+  font-weight: bold;
+
+}
+.main_article p {
+  font-size: 18px;
+  line-height: 25px;
 }
