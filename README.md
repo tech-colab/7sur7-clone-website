@@ -26,13 +26,13 @@ The article template showcases a full article with its content, images, and addi
 ## Screenshots
 
 1. Home Page:
-   ![Home Page](screenshots/home.png)
+   ![Home Page](assets/index.png)
 
 2. User Profile Template:
-   ![User Profile](screenshots/user-profile.png)
+   ![User Profile](assets/profile-form.png)
 
 3. Article Template:
-   ![Article](screenshots/article.png)
+   ![Article](assets/article.png)
 
 ## Contributing
 
