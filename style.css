@@ -9,7 +9,7 @@
   list-style: none;
 }
 :root{
-  /* --top_header_color:#500009; */
+  --top_header_color:#500009;
 }
 body{
   font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
@@ -40,7 +40,7 @@ body{
 }
 .navbar .navbar1 a {
   text-decoration: none;
-  color: #500009;
+  color: var(--top_header_color);
   line-height: 34px;
 }
 .navbar .navbar1 a:hover {
